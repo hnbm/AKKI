@@ -86,6 +86,8 @@ public class cardAdapter extends BaseAdapter {
         Picasso.get().load(cardsData.get(position).url).into(image);
         TextView cardtext = convertView.findViewById(R.id.Cname);
         cardtext.setText(cardsData.get(position).Cname);
+        TextView sumtext = convertView.findViewById(R.id.sum);
+        sumtext.setText(cardsData.get(position).sum+"원");
         return convertView;
     }
 }

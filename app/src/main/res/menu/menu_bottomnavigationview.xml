@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item
-        android:id="@+id/inout"
+        android:id="@+id/inoutView"
         app:showAsAction="always"
         android:icon="@drawable/ic_menu_inout"
         android:enabled="true"

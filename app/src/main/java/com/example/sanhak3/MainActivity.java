@@ -5,21 +5,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
-import android.os.AsyncTask;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.MenuItem;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
-
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
-import org.jsoup.Jsoup;
-
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Iterator;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -50,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
 
             switch(menuItem.getItemId())
             {
-                case R.id.inout:
+                case R.id.inoutView:
                     transaction.replace(R.id.frameLayout, fragmentInout).commitAllowingStateLoss();
                     break;
                 case R.id.balance:
